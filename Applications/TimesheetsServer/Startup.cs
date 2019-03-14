@@ -54,6 +54,8 @@ namespace TimesheetsServer
 
             app.UseMvc();
             app.UseDiscoveryClient();
+            app.UseHystrixMetricsStream();
+            app.UseHystrixRequestContext();
         }
     }
 }
