@@ -6,7 +6,7 @@ applications:
   routes:
   - route: backlog-pal-nxp-cbe.apps.evans.pal.pivotal.io
   path: Applications/BacklogServer/bin/Release/netcoreapp2.1/publish
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-nxp-cbe.apps.evans.pal.pivotal.io
+ 
   services:
   - tracker-backlog-database
+  - tracker-service-registry
